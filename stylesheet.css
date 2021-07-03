@@ -1,73 +1,113 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>インキンタムシゲタカ親衛隊！</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="header-left">
-          <h1 class="header-logo1">インキンタムシゲタカ</h1>
-          <h1 class="header-logo2">親衛隊！</h1>
-        </div>
-        <div class="header-right">
-          <a href="#" class="login">ログイン</a>
-        </div>
-      </div>
-    </header>
-    <div class="top-wrapper">
-      <div class="container">
-        <h1>未来より先の未来へ！理想は叶える為にある！</h1>
-        <h1>インタム親衛隊があなたの生活を徹底マーク！</h1>
-        <p>ルールとかモラルってのは、その中でしか生きられない弱い人達のためにあるものだ！</p>
-        <p>親衛隊は、常識を飛び越した自由な発想を歓迎します！</p>
-        <div class="btn-wrapper">
-          <a href="#" class="btn signup">新規登録はこちら</a>
-          <p>or sign up with</p>
-          <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
-          <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
-        </div>
-      </div>
-    </div>
-    <div class="lesson-wrapper">
-      <div class="container">
-        <div class="heading">
-          <h2>さぁインタム親衛隊の活動を始めよう！　自分にあったアイコンを選びなさい！</h2>
-        </div>
-        <div class="lessons">
-          <div class="lesson">
-            <div class="lesson-icon">
-            <img src="lesson-icon1.png"> 
-            <p>親衛隊見習い</p> 
-            </div>
-            <p class="text-containts" >新規入隊者はこのレッスンからはじめよう。先輩隊員が手とり足とり君たちに訓練してくれるぞ！</p>
-          </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="lesson-icon2.jpg">
-              <p>下級親衛隊</p>
-            </div>
-            <p class="text-containts" >見習いレッスンを終えた君たちは晴れてインタム親衛隊の仲間入りだ！ゆくゆくは独り立ち出来るようにこのレッスンも真剣に取り組もう！</p>
-          </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="lesson-icon3.jpg">
-              <p>中級親衛隊</p>
-            </div>
-            <p class="text-containts" >下級親衛隊レッスンを乗り越えた君は、後輩たちの見本になるためのレッスンを受けてもらう！君たちが新人の目標になれることを祈る！</p>
-          </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="lesson-icon4.jpg">
-              <p>上級親衛隊(笑)</p> 
-            </div>
-            <p class="text-containts" >wwwwwwww 良くなんの疑問も持たずにここまでのレッスンをこなして来たな！君もこれで上級ww 親っw　衛w　隊だw</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
+body{
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+header{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(14, 27, 85);
+    background-size: contain;
+}
+.container{
+    width: 1170px;
+    padding:0 15px ;
+    margin: 0 auto;
+}
+.header-left{
+    padding-top: 7px;
+    float: left;
+}
+.header-right{
+    float: right;
+}
+.header-right a{
+    background-color: rgba(8, 206, 255, 0.3);
+    padding: 10px 20px 0 20px ;
+    height: 40px;
+    transition: 0.5s;
+    display:block
+    
+}
+.header-right a:hover{
+    background-color: rgba(8, 206, 255, 1);
+    cursor: pointer;
+}
+.header-left h1{
+    color: white;
+    font-size: 15px;
+    line-height: 5px;
+}
+.header-logo2{
+    text-align: center;
+}
+
+.top-wrapper{
+    padding:100px 0 100px 0;
+    text-align: center;
+    background-image: url(https://lh3.googleusercontent.com/proxy/z8DxWjGKJ0UYeNyJ9WbX6dWbAFCU5cgq15EYFOzh-c_DSknYd3lV37X64uhC3uhXWSxcSVmbaumqIO36uKcHEyhEnBGmMF19xPROcv3EN-AtaNG8SrIxlpw=s0-d);
+    background-size: cover;
+    color: rgb(226, 55, 55);
+}
+.top-wrapper h1{
+    line-height: 15px;
+    opacity: 0.7;
+}
+.top-wrapper p{
+    opacity: 0.7;
+    line-height: 10px;
+}
+.btn-wrapper{
+    margin: 80px 0 30px 0 ;
+}
+.btn{
+    padding:8px 20px ;
+    color: white;
+}
+.btn:hover{
+    opacity: 1;
+}
+.signup{
+    background-color: rgb(31, 206, 124);
+    opacity: 0.8;
+}
+.facebook{
+    background-color: rgb(49, 76, 226);
+    opacity: 0.8;
+}
+.twitter{
+    background-color: turquoise;
+    opacity: 0.8;
+}
+
+.lesson-wrapper{
+ height: 500px;   
+ text-align: center;
+ background-color: rgba(0, 217, 255, 0.3)
+}
+.lesson{
+    float: left;
+    width: 25%;
+}
+.text-containts{
+  width: 80%;  
+  display: inline-block;
+}
+.lesson-icon img{
+    height: 180px;
+    width: 180px;
+}
+.lesson-icon{
+    position: relative;
+}
+.lesson-icon p{
+    position: absolute;
+    top: 55px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(34, 2, 23);
+}
+.heading{
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
