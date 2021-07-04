@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    width:100vw
 }
 header{
     width: 100%;
@@ -11,7 +12,7 @@ header{
 .container{
     width: 1170px;
     padding:0 15px ;
-    margin: 0 auto;
+    margin:  auto;
 }
 .header-left{
     padding-top: 7px;
@@ -19,11 +20,13 @@ header{
 }
 .header-right{
     float: right;
+    padding-left: 20px;
 }
 .header-right a{
     background-color: rgba(8, 206, 255, 0.3);
     padding: 10px 20px 0 20px ;
     height: 40px;
+    position: absolute;right: 12px; top:0px
     transition: 0.5s;
     display:block
     
@@ -111,3 +114,34 @@ header{
     padding-top: 60px;
     padding-bottom: 30px;
 }
+@media screen and (max-width:768px ) {
+    .header{
+        width: 768px;
+    }
+    .container{
+        width:768px
+    }
+    .header-right a{
+        display: block;
+        padding-left: var(--yt-img-margin-left, auto);
+        padding-right: var(--yt-img-margin-right, auto);
+        max-height: var(--yt-img-max-height, none);
+        max-width: var(--yt-img-max-width, 100%);
+        position: absolute;right: 0px; top:0px
+    }
+    .lesson-icon img{
+        height: 140px;
+        width: 140px;
+    }
+}
+@media only screen and (min-width:651px) {
+    html {
+      font-size: 80%;
+    }
+  }
+   
+  @media only screen and (min-width:961px) {
+    html {
+      font-size: 100%;
+    }
+
